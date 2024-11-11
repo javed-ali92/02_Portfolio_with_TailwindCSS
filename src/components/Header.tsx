@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center bg-[#464545] text-white p-5">
-      <div className="text-3xl font-serif">Portfolio</div>
-      <ul className="flex space-x-5">
+    <div className="flex flex-col sm:flex-row justify-between items-center bg-[#464545] text-white p-5">
+      <div className="text-3xl font-serif mb-4 sm:mb-0">Portfolio</div>
+      <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-5">
         <li>
           <Link href="/" className="font-serif hover:text-[#292928] transition duration-300">
             Home
