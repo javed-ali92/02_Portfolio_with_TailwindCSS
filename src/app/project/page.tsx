@@ -1,27 +1,27 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Project() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gradient-to-br from-[#F7F7F7] to-[#2D2D2D] p-5">
-      <div className="flex flex-col items-center text-center max-w-md w-full bg-gradient-to-br from-[#F7F7F7] to-[#2D2D2D] border border-black rounded-lg shadow-lg p-5 transition-shadow [box-shadow:0px_0px_20px_black] duration-300 ease-in-out transform hover:shadow-2xl hover:-translate-y-1 animate-fadeInUp">
-        <div className="mb-4 rounded-full overflow-hidden">
+    <div className="bg-gradient-to-br from-[#F7F7F7] to-[#2D2D2D] p-5">
+      <h1 className="text-center text-3xl font-serif mb-8 text-gray-800">My Projects</h1>
+      <div className="flex justify-center flex-wrap">
+        <div className="bg-[#3d3c3c] animate-fadeInUp [box-shadow:0px_0px_20px_black] border-2 border-gray-900 rounded-lg shadow-lg overflow-hidden p-5 mx-3 mb-5 transition-transform duration-300 transform hover:-translate-y-1 animate-fadeIn w-80 flex flex-col items-center">
           <Image
-            className="rounded-full transition-transform duration-300 ease-in-out hover:scale-105"
-            src="/01_javed_pic.png"
-            alt="Profile-pic"
+            src="/cv.PNG"
+            alt="Portfolio Item Image"
             width={300}
-            height={300}
+            height={250}
+            className="rounded-lg mb-4 shadow-md"
           />
-        </div>
-
-        <div className="font-serif">
-          <h1 className="text-2xl text-black">Hi, I&apos;m Javed Ali</h1>
-          <h2 className="text-xl text-black mb-2">Web Developer</h2>
-          <p className="text-white text-base leading-relaxed">
-            I&apos;m a passionate web developer and
-            <br />
-            Here, you can explore my expertise and creative projects.
+          <h3 className="font-serif text-xl text-black mb-2">Static Resume</h3>
+          <p className="text-white text-sm leading-relaxed mb-4">
+            An interactive resume built with TypeScript, HTML, and CSS, enabling users to dynamically showcase their skills.
           </p>
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm transition-colors duration-300 hover:bg-blue-700">
+            <a href="https://static-resume-theta-ashy.vercel.app/" target="_blank" rel="noopener noreferrer">
+              View Resume
+            </a>
+          </button>
         </div>
       </div>
     </div>
