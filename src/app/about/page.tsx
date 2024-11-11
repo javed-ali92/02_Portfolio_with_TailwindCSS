@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gradient-to-br from-[#F7F7F7] to-[#2D2D2D] p-5 text-center animate-fadeIn">
+    <div className="flex justify-center items-center h-auto md:h-screen bg-gradient-to-br from-[#F7F7F7] to-[#2D2D2D] p-5 text-center animate-fadeIn">
       <div className="border border-black [box-shadow:0px_0px_20px_black] animate-fadeInUp bg-black bg-opacity-25 rounded-lg text-black p-5 sm:p-10 shadow-lg max-w-2xl w-full">
         <h1 className="text-3xl mb-4 font-serif">About</h1>
         <p className="text-base sm:text-lg leading-relaxed text-white">
